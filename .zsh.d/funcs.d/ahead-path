@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+local i=$path[(I)$1];
+[[ i -gt 0 ]] && path[i]=''
+path=($1 $path)
